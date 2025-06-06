@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>3D Solar System</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    canvas { display: block; }
+
+    /* Control Panel Styling */
+    #controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px;
+      border-radius: 8px;
+      color: white;
+      font-family: sans-serif;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      margin-top: 6px;
+    }
+
+    input[type="range"] {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 👇 Add this control panel here -->
+  <div id="controls">
+    <button id="pauseResumeBtn" style="margin-top: 10px;">Pause</button>
+  </div>
+
+  <!-- 👇 Include Three.js and your main.js -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
+
